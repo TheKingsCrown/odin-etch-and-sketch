@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-.grid-container {
+.grid {
     width: 750px;
     height: 750px;
     display: flex;
@@ -17,4 +17,17 @@
 
 .grid-square {
     flex: 1 0 auto;
+    border: 1px solid #000000;
+}
+
+.grid-square.fill {
+    background-color: black;
+}
+
+#grid-button {
+    display: flex;
+    background-color: aquamarine;
+    justify-self: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
