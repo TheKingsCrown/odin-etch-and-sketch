@@ -1,7 +1,7 @@
 var gridSize = 16;
 function createGrid(size) {
     let gridContainer = document.querySelector(".grid-container");
-    for (let i = 0; i < gridSize; i++) {
+    for (let i = 0; i < size; i++) {
             gridContainer.appendChild((() => {
             var row = document.createElement("div");
             row.classList.add("grid-row");
@@ -9,7 +9,7 @@ function createGrid(size) {
         })());
     }
     gridContainer.childNodes.forEach(row => {
-        for (let i = 0; i < gridSize; i++) {
+        for (let i = 0; i < size; i++) {
             row.appendChild((() => {
                 var gridSquare = document.createElement("div");
                 gridSquare.classList.add("grid-square");
@@ -20,4 +20,4 @@ function createGrid(size) {
     });
 }
 
-createGrid();
+createGrid(gridSize);
